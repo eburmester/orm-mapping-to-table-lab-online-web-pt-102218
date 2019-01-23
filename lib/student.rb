@@ -23,7 +23,7 @@ class Student
   def self.drop_table
     sql = <<-SQL
       DROP TABLE IF EXISTS sqlite_master.students
-        SQL 
+    SQL  
     DB[:conn].execute(sql)
   end 
   
